@@ -1,0 +1,32 @@
+.font-display{
+  font-family: "Alice";
+  font-size: 72px;
+  font-weight: 400;
+}
+
+.font-2-l{
+  font-family: "Nunito";
+  font-size: 24px;
+  font-weight: 400;
+}
+.font-2-m{
+  font-family: "Nunito";
+  font-size: 18px;
+  font-weight: 400;
+}
+.font-2-m-b{
+  font-family: "Nunito";
+  font-size: 18px;
+  font-weight: 700;
+}
+.font-2-s{
+  font-family: "Nunito";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.font-2-s-b{
+  font-family: "Nunito";
+  font-size: 14px;
+  font-weight: 700;
+}
