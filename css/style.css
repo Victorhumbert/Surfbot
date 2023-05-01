@@ -23,12 +23,9 @@ img {
   display: block;
   max-width: 100%;
   max-height: 100%;
-  object-fit: cover;
 }
 
-body {
-  height: 2000px;
-}
+
 /* Opções gerais */
 .container {
   max-width: 1170px;
@@ -146,12 +143,15 @@ header .bg-info {
   display: grid;
   justify-items: center;
 }
+.img-principal img {
+  object-fit: cover;
+}
 .img-principal:first-child {
-  width: 570px;
+  max-width: 570px;
   height: 671px;
 }
 #mapa {
-  width: 540px;
+  max-width: 90%;
   height: 240px;
   position: relative;
   top: -120px;
@@ -212,7 +212,7 @@ header .bg-info {
 .informacoes ul li::before {
   display: block;
   content: "";
-  width: 60px;
+  min-width: 60px;
   height: 64px;
 }
 .informacoes ul li:first-child:before {
@@ -227,7 +227,7 @@ header .bg-info {
 
 /* Tipos de aulas */
 .aulas {
-  margin-top: 60px;
+  margin-top: 120px;
   background: var(--cor-1);
   padding: 60px;
   position: relative;
@@ -237,8 +237,9 @@ header .bg-info {
   position: absolute;
   justify-self: center;
   content: url("../img/icons/ondas.svg");
-  top: -35px;
-  right: 42%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .aulas h1 {
@@ -260,9 +261,6 @@ header .bg-info {
   box-shadow: 0 10px 10px #bbccdd33, 0 5px 5px #bbccdd22;
   position: relative;
 }
-.aulas-info > li h2 {
-  text-align: center;
-}
 .aulas-info > li::before {
   display: block;
   content: "";
@@ -270,8 +268,71 @@ header .bg-info {
   height: 38px;
   position: absolute;
   background: url("../img/icons/surfbot-icon.svg");
-  top: -20px;
-  right: 46.5%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.aulas-info > li h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.aulas-info li ul {
+  border-top: 2px solid var(--cor-1);
+  border-bottom: 2px solid var(--cor-1);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.aulas-info li ul li + li {
+  margin-top: 10px;
+}
+.aulas-info li ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.aulas-info li ul li::before {
+  display: block;
+  content: "";
+  width: 4px;
+  height: 4px;
+  border: 2px solid var(--cor-s2);
+  border-radius: 50%;
+}
+
+.aulas-matricula {
+  display: flex;
+  gap: 30px;
+  justify-self: center;
+  background: var(--cor-5);
+  border-radius: 5px;
+  padding: 7px 15px;
+  margin-top: 30px;
+}
+.aulas-matricula::after {
+  display: block;
+  content: url("../img/icons/seta.svg");
+}
+.aulas p {
+  margin-top: 30px;
+  text-align: center;
+  justify-self: center;
+}
+.bb {
+  border-bottom: 2px solid var(--cor-s2);
+}
+
+/* Menção */
+.mencao {
+  display: grid;
+  gap: 30px;
+  max-width: 100%;
+  height: 480px;
+  background: url("../img/foto-quote.jpg");
+  color: #fff;
+  place-content: center;
+  text-align: center;
 }
 
 @media (max-width: 1100px) {
