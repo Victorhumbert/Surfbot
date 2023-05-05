@@ -334,76 +334,94 @@ header .bg-info {
 }
 
 /* Contato Form */
-.contato-form {
+.contato-form .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr auto 1fr;
   padding: 0 60px;
-  gap: 0 30px;
+  gap: 0 60px;
   justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
 }
-.contato-form > h1 {
+.contato-form .container > h1 {
   grid-column: 1/-1;
   text-align: center;
   margin-bottom: 30px;
 }
-.contato-form form {
-  border-right: 2px solid var(--cor-1);
-  padding-right: 60px;
-  margin-right: 30px;
-}
 
 .contato-form input,
 .contato-form textarea {
-  display: grid;
+  display: block;
+  box-sizing: border-box;
   border-radius: 5px;
   padding: 10px 15px;
   border: 1px solid #0000;
   margin-top: 5px;
   margin-bottom: 10px;
   background: var(--cor-1);
-  width: 90%;
+  width: 100%;
+  min-width: 100%;
+  max-width: 450px;
   font-family: "Nunito", Arial, Helvetica, sans-serif;
-  box-shadow: 0 2px 2px #BBCCDD66;
+  box-shadow: 0 2px 2px #bbccdd66;
 }
 .contato-form input:focus,
 .contato-form textarea:focus {
   border: 1px solid var(--cor-p2);
 }
-.contato-form button{
+.contato-form button {
   display: flex;
   padding: 15px;
   border-radius: 5px;
   background: var(--cor-5);
   gap: 15px;
-  box-shadow: 0 2px 2px #BBCCDD66;
-margin-top: 30px;
+  box-shadow: 0 2px 2px #bbccdd66;
+  margin-top: 30px;
+  justify-self: start;
 }
-.contato-form button::after{
+.contato-form button::after {
   display: block;
   content: url("../img/icons/seta.svg");
 }
-
+#sep{
+  display: block;
+  width: 2px;
+  height: 100%;
+  background: var(--cor-1);
+}
+/* Informações contato */
 
 .informacoes-contato h1 {
   margin-bottom: 5px;
 }
 .informacoes-contato > div + div {
-  border-top: 2px solid var(--cor-1) ;
+  border-top: 2px solid var(--cor-1);
   padding-top: 30px;
   margin-top: 30px;
 }
 
-.informacoes-contato ul li + li{
+.informacoes-contato ul li + li {
   margin-top: 1px;
   padding-top: 1px;
 }
-.informacoes-contato ul li a{
-  transition: .3s;
+.informacoes-contato ul li a {
+  transition: 0.3s;
 }
-.informacoes-contato ul li a:hover{
+.informacoes-contato ul li a:hover {
   color: var(--cor-6);
 }
 
+/* Footer */
+.footer{
+  margin-top: 30px;
+  background: var(--cor-p2);
+}
+.footer .container{
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding:60px;
+}
 
 @media (max-width: 1100px) {
 }

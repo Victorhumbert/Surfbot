@@ -122,56 +122,64 @@
   </section>
 
   <blockquote aria-labelledby="mencao" class="mencao">
-    <p><q id="mencao" class="font-display">O surf liberta as <br>
-        ondas de uma vida.</q></p>
+    <p id="mencao" class="font-display">O surf liberta as <br>
+      ondas de uma vida.</p>
     <p class="font-2-m-b">Regis Pereira</p>
   </blockquote>
 
-  <section class="contato-form container" id="contato">
-    <h1 class="font-display cor-6">Contato</h1>
-    <form action="#" class="font-2-m-b cor-5">
-      <div>
-        <label for="nome">Nome</label>
-        <input type="text" name="nome" id="nome">
+  <section class="contato-form" id="contato">
+    <div class="container">
+      <h1 class="font-display cor-6">Contato</h1>
+      <form action="#" class="font-2-m-b cor-5">
+        <div>
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" id="nome">
+        </div>
+        <div>
+          <label for="email-msg">Email</label>
+          <input type="email" name="email-msg" id="email-msg">
+        </div>
+        <div>
+          <label for="textarea">Mensagem</label>
+          <textarea name="textarea" id="textarea" cols="50" rows="10"></textarea>
+        </div>
+        <button type="submit" class="btn cor-1 font-2-m-b">Enviar mensagem</button>
+      </form>
+      <div id="sep"></div>
+      <div class="informacoes-contato cor-5">
+        <div>
+          <h1 class="font-2-m-b">Endereço</h1>
+          <ul class="font-2-s">
+            <li> Praia Mansa nº 47 </li>
+            <li>Rio de Janeiro - RJ</li>
+            <li>Procure a barraca vermelha</li>
+            <li><a href="#" class="btn font-2-s-b">ver no mapa</a></li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="font-2-m-b">Email & Telefone</h1>
+          <ul class="font-2-s">
+            <li><a href="mailto:contato@surfbot.com">contato@surfbot.com</a></li>
+            <li><a href="tel:+5521999999999">21 99999-9999</a></li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="font-2-m-b">Horário</h1>
+          <ul class="font-2-s">
+            <li>De Sexta à Sábado</li>
+            <li>Das 06:00 às 14:00</li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <label for="email-msg">Email</label>
-        <input type="email" name="email-msg" id="email-msg">
-      </div>
-      <div>
-        <label for="textarea">Mensagem</label>
-        <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
-      </div>
-      <button type="submit" class="btn cor-1 font-2-m-b">Enviar mensagem</button>
-    </form>
-    <div class="informacoes-contato cor-5">
-      <div>
-        <h1 class="font-2-m-b">Endereço</h1>
-        <ul class="font-2-s">
-          <li> Praia Mansa nº 47 </li>
-          <li>Rio de Janeiro - RJ</li>
-          <li>Procure a barraca vermelha</li>
-          <li><a href="#" class="btn font-2-s-b">ver no mapa</a></li>
-        </ul>
-      </div>
-      <div>
-        <h1 class="font-2-m-b">Email & Telefone</h1>
-        <ul class="font-2-s">
-          <li><a href="mailto:contato@surfbot.com">contato@surfbot.com</a></li>
-          <li><a href="tel:+5521999999999">21 99999-9999</a></li>
-        </ul>
-      </div>
-      <div>
-        <h1 class="font-2-m-b">Horário</h1>
-        <ul class="font-2-s">
-          <li>De Sexta à Sábado</li>
-          <li>Das 06:00 às 14:00</li>
-        </ul>
-      </div>
-    </div>
     </div>
   </section>
 
+  <footer class="footer">
+    <div class="container">
+      <h1 class="font-2-m-b">Surfnet 2017 - Alguns direitos reseervados..</h1>
+      <img src="./img/icons/surfbot-logo.svg" alt="surfbot logo">
+    </div>
+  </footer>
 </body>
 
 </html>
