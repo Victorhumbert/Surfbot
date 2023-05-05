@@ -1,0 +1,27 @@
+/* Header */
+.menu-header {
+  background: #17222d;
+  padding: 0 60px;
+}
+.menu-header .container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+header .bg-info {
+  background: #1188ee;
+  grid-column: 1/-1;
+  padding: 0 60px;
+}
+
+.bg-info p {
+  align-self: center;
+  padding: 5px 0;
+}
+
+.menu-header nav .lista-menu {
+  display: flex;
+  gap: 30px;
+  padding: 15px 0;
+}

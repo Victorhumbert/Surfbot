@@ -1,0 +1,51 @@
+/* Informações contato */
+.informacoes-contato {
+  background: url("../../../img/icons/bg-icones.svg") no-repeat right;
+}
+
+.informacoes-contato h1 {
+  margin-bottom: 5px;
+}
+.informacoes-contato > div + div {
+  border-top: 2px solid var(--cor-1);
+  padding-top: 30px;
+  margin-top: 30px;
+}
+
+.informacoes-contato ul li + li {
+  margin-top: 1px;
+  padding-top: 1px;
+}
+.informacoes-contato ul li {
+  display: grid;
+  justify-content: start;
+}
+.informacoes-contato ul li a {
+  transition: 0.3s;
+  display: flex;
+  align-content: center;
+  gap: 10px;
+}
+.informacoes-contato ul li a:hover {
+  color: var(--cor-6);
+}
+.informacoes-contato > div > ul > li + li + li > a::after {
+  display: block;
+  content: url("../../../img/icons/seta-vermelha.svg");
+}
+
+.informacoes-contato div + div + div h1 {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.informacoes-contato div + div + div h1::before {
+  display: block;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border: 2px solid #16c70b;
+  border-radius: 50%;
+  position: absolute;
+  left: -15px;
+}

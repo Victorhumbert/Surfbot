@@ -1,0 +1,97 @@
+/* Tipos de aulas */
+.aulas {
+  margin-top: 120px;
+  background: var(--cor-1);
+  padding: 60px;
+  position: relative;
+}
+.aulas::before {
+  display: block;
+  position: absolute;
+  justify-self: center;
+  content: url("../../../img/icons/ondas.svg");
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.aulas h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.aulas-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  text-align: start;
+  gap: 30px;
+  justify-items: center;
+}
+
+.aulas-info > li {
+  padding: 30px 70px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px #bbccdd33, 0 5px 5px #bbccdd22;
+  position: relative;
+}
+.aulas-info > li::before {
+  display: block;
+  content: "";
+  width: 21px;
+  height: 38px;
+  position: absolute;
+  background: url("../../../img/icons/surfbot-icon.svg");
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.aulas-info > li h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.aulas-info li ul {
+  border-top: 2px solid var(--cor-1);
+  border-bottom: 2px solid var(--cor-1);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.aulas-info li ul li + li {
+  margin-top: 10px;
+}
+.aulas-info li ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.aulas-info li ul li::before {
+  display: block;
+  content: "";
+  width: 4px;
+  height: 4px;
+  border: 2px solid var(--cor-s2);
+  border-radius: 50%;
+}
+
+.aulas-matricula {
+  display: flex;
+  gap: 30px;
+  justify-self: center;
+  background: var(--cor-5);
+  border-radius: 5px;
+  padding: 7px 15px;
+  margin-top: 30px;
+}
+.aulas-matricula::after {
+  display: block;
+  content: url("../../../img/icons/seta.svg");
+}
+.aulas > p {
+  margin-top: 30px;
+  text-align: center;
+  justify-self: center;
+}
+.aulas > p a {
+  border-bottom: 2px solid var(--cor-s2);
+}

@@ -1,0 +1,12 @@
+/* Footer */
+.footer {
+  margin-top: 30px;
+  background: var(--cor-p2);
+}
+.footer .container {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+}

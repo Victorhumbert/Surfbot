@@ -1,0 +1,96 @@
+/* Conteudo principal */
+.conteudo-principal {
+  margin: 60px 60px 0;
+}
+.conteudo-principal .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 130px;
+}
+
+/* Imagens */
+.img-principal {
+  display: grid;
+  justify-items: center;
+}
+.img-principal img {
+  object-fit: cover;
+}
+.img-principal:first-child {
+  max-width: 570px;
+  height: 671px;
+}
+#mapa {
+  max-width: 90%;
+  height: 240px;
+  position: relative;
+  top: -120px;
+  box-shadow: 0 10px 10px #bbccdd33, 0 5px 5px #bbccdd22;
+}
+/* Como chegar */
+.como-chegar {
+  position: relative;
+  place-self: start;
+  top: -60px;
+}
+.como-chegar h1 {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.como-chegar h1::before {
+  display: block;
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  border: 2px solid var(--cor-s2);
+}
+.como-chegar li {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.como-chegar li::before {
+  display: block;
+  content: "";
+  width: 10px;
+  height: 2px;
+  background: var(--cor-p2);
+}
+
+/* Informações */
+.informacoes ul {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  border-top: 2px solid var(--cor-1);
+  border-bottom: 2px solid var(--cor-1);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.informacoes ul li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.informacoes ul li + li {
+  border-top: 2px solid var(--cor-1);
+  margin-top: 30px;
+  padding-top: 30px;
+}
+.informacoes ul li::before {
+  display: block;
+  content: "";
+  min-width: 60px;
+  height: 64px;
+}
+.informacoes ul li:first-child:before {
+  background: url("../../../img/icons/sandalhas.svg") no-repeat;
+}
+.informacoes ul li:nth-child(2):before {
+  background: url("../../../img/icons/coco.svg") no-repeat;
+}
+.informacoes ul li:last-child:before {
+  background: url("../../../img/icons/boia.svg") no-repeat;
+}

@@ -1,0 +1,18 @@
+/* Introdução */
+.intro {
+  background: url("../../../img/bg-intro.png") no-repeat;
+  max-width: 1260px;
+  height: 400px;
+  margin: 0 auto;
+  display: grid;
+  align-items: end;
+}
+
+.intro .container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  max-width: 1170px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px;
+}
